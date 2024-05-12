@@ -31,14 +31,14 @@ export default [
   },
   {
     name: '我的接口',
-    icon: 'StarOutlined',
+    icon: 'UsbTwoTone',
     path: '/my_interface',
     component: './MyInterface'
   },
   {
     path: '/index',
     name: '接口列表',
-    icon: 'smile',
+    icon: 'StarTwoTone',
     component: './Index',
   },
   {
