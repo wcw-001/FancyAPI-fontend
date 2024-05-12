@@ -30,6 +30,12 @@ export default [
     component: './Welcome',
   },
   {
+    name: '我的接口',
+    icon: 'StarOutlined',
+    path: '/my_interface',
+    component: './MyInterface'
+  },
+  {
     path: '/index',
     name: '接口列表',
     icon: 'smile',
@@ -61,6 +67,12 @@ export default [
         icon: 'table',
         path: '/admin/interface_analysis',
         component: './Admin/InterfaceAnalysis',
+      },
+      {
+        name: '用户管理页',
+        icon: 'table',
+        path: '/admin/user_manager',
+        component: './Admin/UserManage',
       },
     ],
   },

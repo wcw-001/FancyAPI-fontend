@@ -92,6 +92,21 @@ export async function listInterfaceInfoByPageUsingGET(
   });
 }
 
+/** listInterfaceInfoVOByUserIdPage POST /api/interfaceInfo/my/list/page/vo */
+export async function listInterfaceInfoVOByUserIdPageUsingPOST(
+  body: API.InterfaceInfoQueryRequest,
+  options?: { [key: string]: any },
+) {
+  return request<API.BaseResponsePageInterfaceInfoVO>('/api/interfaceInfo/my/list/page/vo', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    data: body,
+    ...(options || {}),
+  });
+}
+
 /** offlineInterfaceInfo POST /api/interfaceInfo/offline */
 export async function offlineInterfaceInfoUsingPOST(
   body: API.IdRequest,

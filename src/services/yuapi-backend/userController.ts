@@ -44,6 +44,14 @@ export async function getUserByIdUsingGET(
   });
 }
 
+/** getUserByList GET /api/user/get_all */
+export async function getUserByListUsingGET(options?: { [key: string]: any }) {
+  return request<API.BaseResponseListUserVO>('/api/user/get_all', {
+    method: 'GET',
+    ...(options || {}),
+  });
+}
+
 /** getLoginUser GET /api/user/get/login */
 export async function getLoginUserUsingGET(options?: { [key: string]: any }) {
   return request<API.BaseResponseUserVO>('/api/user/get/login', {
